@@ -213,7 +213,6 @@ a:hover {
 #landing-page .landing-page-image {
   height: 100%;
   position: relative;
-  transform: rotate(-90deg);
 }
 
 #about-me .landing-page-image {
