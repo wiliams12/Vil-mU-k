@@ -1,6 +1,7 @@
 /* General styles */
 
 :root {
+  /* variables */
   --white: #ffffff;
   --dark: #2d3142;
   --secondary: #7785ac;
@@ -18,6 +19,7 @@ html {
   overflow-x: hidden;
 }
 
+/* smaller fonts for smaller screens */
 @media (max-width: 1200px) {
   html {
     font-size: 14px;
@@ -48,6 +50,7 @@ body {
   overflow-x: hidden;
 }
 
+/* display of individual sections of content */
 section,
 footer {
   padding: 1rem 2rem;
@@ -62,6 +65,7 @@ footer {
   box-shadow: -5px 0 10px var(--dark);
 }
 
+/* collapsing of a dark padding around the whole site on smaller screen */
 @media (max-width: 720px) {
   body {
     margin: 0;
@@ -128,6 +132,8 @@ a:hover {
 
 /* Landing page */
 
+/* flex container, spanning entire screen, linear gradient background */
+
 #landing-page {
   height: 100vh;
   display: flex;
@@ -139,7 +145,7 @@ a:hover {
 
 #landing-page h1 {
   font-size: 4rem;
-  z-index: 999;
+  z-index: 999; /* makes sure, image is bellow */
   position: relative;
 }
 
@@ -148,6 +154,7 @@ a:hover {
   padding: 0;
 }
 
+/* flex items on landing screen */
 #landing-page > div {
   width: 50%;
   height: 100%;
@@ -161,6 +168,7 @@ a:hover {
   z-index: 1;
 }
 
+/* hidden subcaption, displayed on hover */
 #landing-page .unroll p {
   position: relative;
   text-align: center;
@@ -377,6 +385,7 @@ a:hover {
   padding: 0;
 }
 
+/* bar is constructed from three div elements => animation on click made possible (instead of a static asset) */
 #hamburger .bar {
   display: block;
   width: 25px;
@@ -503,6 +512,7 @@ a:hover {
   margin: 0.3rem;
 }
 
+/* timeline as a border */
 #education ol {
   margin: 0;
   padding: 0;
@@ -513,6 +523,7 @@ a:hover {
   position: relative;
 }
 
+/* arrow at the end of timeline */
 #education ol::after {
   content: "\f0d7";
   font-family: "Font Awesome 6 Free";
@@ -531,11 +542,13 @@ a:hover {
   position: relative;
 }
 
+/* hover for list icons */
 #education ol li:hover::before {
   color: var(--primary-hover);
   left: -7rem;
 }
 
+/* list icons along the timeline */
 #education ol li::before {
   content: "\f19d";
 
@@ -585,6 +598,7 @@ a:hover {
   background-color: var(--white);
 }
 
+/* enlarging elements on hover */
 #experience li:hover {
   transform: scale(1.2);
   box-shadow: 0 0 10px 5px var(--secondary);
@@ -628,6 +642,7 @@ a:hover {
 
 /* individual positioning for the grid */
 
+/* custom grid order for larger screens */
 @media (min-width: 1150px) {
   #experience ol {
     display: grid;
@@ -695,6 +710,7 @@ a:hover {
   border-bottom: 3px solid var(--white);
 }
 
+/* Blur items on devices that support hover*/
 @media (hover: hover) {
   #skills section > * {
     filter: blur(6px);
@@ -767,7 +783,6 @@ a:hover {
 }
 
 #personal-projects ul p {
-  /* Line-clamp properties */
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -787,6 +802,7 @@ a:hover {
     color 0.8s ease-out;
 }
 
+/* slide the complete text across the image */
 #personal-projects li div:hover p {
   height: 24.2rem;
 
@@ -802,6 +818,7 @@ a:hover {
   box-shadow: none;
 }
 
+/* handling the hidden text on touch screens */
 @media (hover: none) {
   #personal-projects li.active p {
     height: 24.2rem;
