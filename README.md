@@ -6,3 +6,5 @@
 - JS jsem využil k vytvoření hamburger menu pro mobilní zařízení
 
 LLM byly využity k úpravě textů a jako edukativní nástroj k efektivnějšímu výberu potřebných HTML komponent a CSS atributů
+
+stránka je spuštěna na odkaze: "https://vilemucik.netlify.app"
