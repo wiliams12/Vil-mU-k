@@ -600,7 +600,7 @@ a:hover {
 
 /* enlarging elements on hover */
 #experience li:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
   box-shadow: 0 0 10px 5px var(--secondary);
   z-index: 999;
 }
@@ -711,7 +711,7 @@ a:hover {
 }
 
 /* Blur items on devices that support hover*/
-@media (hover: hover) {
+/* @media (hover: hover) {
   #skills section > * {
     filter: blur(6px);
     transition: filter 0.3s ease-out;
@@ -720,7 +720,7 @@ a:hover {
   #skills section:hover > * {
     filter: blur(0);
   }
-}
+}*/
 
 #skills h2 {
   width: 100%;
